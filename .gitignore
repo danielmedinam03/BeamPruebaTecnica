@@ -1,0 +1,38 @@
+# Ignore la carpeta de paquetes NuGet
+**/[Pp]ackages/
+# Ignora la carpeta de salida de compilación
+[Bb]in/
+[Oo]bj/
+# Ignora los archivos de configuración de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Ignora los archivos de configuración local
+appsettings.json
+
+# Ignora archivos de Resharper si lo usas
+*_ReSharper.*/
+*.[Rr]e[Ss]harper
+
+# Ignora la carpeta .vs, que contiene configuración específica del entorno de Visual Studio
+.vs/
+
+# Ignora archivos de caché y logs
+*.cache
+*.log
+*.vscode/
+
+# Ignora la carpeta de artefactos
+artifacts/
+
+# Dumps de memoria, ficheros generados en tiempo de ejecución
+*.dmp
+MemoryCaptures/
+
+# Ignora los archivos de la base de datos SQL local
+*.mdf
+*.ldf
+
+# Archivos de configuración de desarrollo específicos de Docker
+docker-compose.override.yml
