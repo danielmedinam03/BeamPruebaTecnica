@@ -8,8 +8,6 @@
 *.suo
 *.userosscache
 *.sln.docstates
-# Ignora los archivos de configuración local
-appsettings.json
 
 # Ignora archivos de Resharper si lo usas
 *_ReSharper.*/
