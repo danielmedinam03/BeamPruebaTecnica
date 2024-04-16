@@ -26,6 +26,7 @@ namespace Services.Extensions
             services.AddScoped<IUnitOfWork, ApplicationDbContext>();
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserSPService, UserSPService>();
 
 
             services.AddScoped(typeof(Repositories.IRepositories.IBaseRepository.IBaseReporitory<,>), typeof(Repositories.Repositories.BaseRepository.BaseRepository<,>));

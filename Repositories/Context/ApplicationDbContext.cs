@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
+using Models.DTO.Response;
 using Models.Models;
 using Repositories.Context.Seed;
 using Repositories.FluentConfig;
@@ -24,6 +24,10 @@ namespace Repositories.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Rol> Rol { get; set; }
         public DbSet<LoginEvent> LoginEvent { get; set; }
+
+        public DbSet<UserName> UserName { get;set; }
+        public DbSet<UserResponseDto> UserResponseDto { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

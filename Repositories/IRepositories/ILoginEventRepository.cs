@@ -10,5 +10,7 @@ namespace Repositories.IRepositories
 {
     public interface ILoginEventRepository : IBaseReporitory<int, LoginEvent>
     {
+        Task<bool> AddLoginSp(LoginEvent request);
+        
     }
 }

@@ -80,11 +80,6 @@ namespace Repositories.Migrations
                 columns: new[] { "Id", "Estado", "Nombre" },
                 values: new object[] { 3, true, "Profesor" });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_User_RolId",
-                table: "User",
-                column: "RolId",
-                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -44,5 +44,8 @@ namespace WebApi.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult<ResponseBase<string>>> Login([FromBody] LoginDto loginDto)
             => await _userService.Login(loginDto);
+        [HttpDelete("{Id}")]
+        public async Task<ActionResult<ResponseBase<bool>>> DeleteUser(int Id)
+            => await _userService.DeleteUser(Id);
     }
 }
